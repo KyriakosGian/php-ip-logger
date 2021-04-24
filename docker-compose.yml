@@ -2,7 +2,7 @@ version: "3.9"
 services:
   web:
     image: php:7.4-apache
-    container_name: server
+    container_name: web
     ports:
       - 80:80
     volumes:
