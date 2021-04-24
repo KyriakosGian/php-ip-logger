@@ -41,7 +41,7 @@ as the file where you pasted the **JavaScript** code.
        xhttp.open("GET", url, true);
        xhttp.send();
     }
-    <script>
+ <script>
 ```
 
 ## Settings
