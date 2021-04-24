@@ -1,16 +1,9 @@
 version: "3.9"
-
 services:
-  server:
-    build:
-      context: .
-      dockerfile: .Dockerfile
+  web:
+    image: php:7.4-apache
     container_name: server
-    restart: always
     ports:
       - 80:80
     volumes:
-      - type: bind
-        source: ./src
-        target: /var/www/html
-        consistency: consistent
+      - ./src:/var/www/html
